@@ -4,4 +4,4 @@ bin
 lib
 include
 app/__pycache__/*
-
+*/__pycache__/*
