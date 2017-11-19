@@ -38,7 +38,7 @@ Leap.loop(function(frame) {
     });
 } // toLoop
 
-setInterval(toLoop, 3000);
+setInterval(toLoop, 5000);
 
 // end loop
 
