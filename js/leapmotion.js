@@ -11,20 +11,25 @@ window.onload=function(){
 			//var cube = new THREE.Mesh( geometry, material );
 
 
-/*
+
       const handGeometry = new THREE.BoxGeometry(1,1,6);
-      const handMaterial = new THREE.MeshBasicMaterial({color:0x00ff00})
+      const handMaterial = new THREE.MeshBasicMaterial({color:0x00ff00});
       const hands = [
         new THREE.Mesh(handGeometry,handMaterial)
       ];
       scene.add( hands[0])
-*/
+
       const fingerGeometry = new THREE.BoxGeometry(.15,1,6);
-      const fingerMaterial = new THREE.MeshBasicMaterial({color:0x00ff00})
+      const fingerMaterial = new THREE.MeshBasicMaterial({color:0x00ff00});
       const fingers = [
         new THREE.Mesh(fingerGeometry,fingerMaterial)
       ];
-      scene.add( fingers[0],fingers[1],fingers[2],fingers[3],fingers[4])
+
+      for(i=0;i<=fingers.length; i++) {
+        if (fingers[i]!=null) {
+          scene.add( fingers[i]);
+         }
+      }
 
 			camera.position.z = 5;
 
