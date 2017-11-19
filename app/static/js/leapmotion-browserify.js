@@ -12,14 +12,14 @@ window.onload=function(){
 			//var cube = new THREE.Mesh( geometry, material );
 
 
-
+/*
       const handGeometry = new THREE.BoxGeometry(1,1,6);
       const handMaterial = new THREE.MeshBasicMaterial({color:0x00ff00})
       const hands = [
         new THREE.Mesh(handGeometry,handMaterial)
       ];
       scene.add( hands[0])
-
+*/
       const fingerGeometry = new THREE.BoxGeometry(.15,1,6);
       const fingerMaterial = new THREE.MeshBasicMaterial({color:0x00ff00})
       const fingers = [
