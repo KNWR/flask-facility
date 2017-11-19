@@ -12,7 +12,6 @@ window.onload=function(){
 			//var cube = new THREE.Mesh( geometry, material );
 
 
-
       const handGeometry = new THREE.BoxGeometry(1,1,6);
       const handMaterial = new THREE.MeshBasicMaterial({color:0x00ff00});
       const hands = [
@@ -20,19 +19,29 @@ window.onload=function(){
       ];
       scene.add( hands[0])
 
+
+      for (i=0; i<4; i++) {
+      //instance of finger 1
       const fingerGeometry = new THREE.BoxGeometry(.15,1,6);
       const fingerMaterial = new THREE.MeshBasicMaterial({color:0x00ff00});
-      const fingers = [
-        new THREE.Mesh(fingerGeometry,fingerMaterial)
-      ];
+      const finger = new THREE.Mesh(fingerGeometry,fingerMaterial);
+      scene.add( finger);
+      }
 
+
+
+      // const fingerGeometry = new THREE.BoxGeometry(.15,1,6);
+      // const fingerMaterial = new THREE.MeshBasicMaterial({color:0x00ff00});
+      // const fingers = [
+      //   new THREE.Mesh(fingerGeometry,fingerMaterial)
+      // ];
+
+      // // issue here
       // for(i=0;i<=fingers.length; i++) {
       //   if (fingers[i]!=null) {
-      //     scene.add( fingers[i]);
+      //     scene.add( fingers[i] );
       //    }
       // }
-
-      scene.add(fingers);
 
 			camera.position.z = 5;
 
