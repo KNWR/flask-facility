@@ -1,6 +1,14 @@
+const leapjsplugins = require('leapjs-plugins');
+
 const Leap = require ('leapjs');
 
-Leap.loop(function(frame){
+const controller = new Leap.Controller();
+
+controller
+.use("riggedHands")
+.connect();
+
+controller.loop(function(frame){
   const hands = frame.hands;
   //console.log(hands.length);
 

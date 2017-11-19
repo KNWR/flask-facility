@@ -5,7 +5,8 @@
   "main": "index.js",
   "dependencies": {
     "babel-preset-env": "^1.6.1",
-    "leapjs": "^0.6.4"
+    "leapjs": "^0.6.4",
+    "leapjs-plugins": "^0.1.12"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0"
